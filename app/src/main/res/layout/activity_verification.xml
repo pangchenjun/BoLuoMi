@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edecea"
+    tools:context="com.example.pang.boluomi.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#40bbb3"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="验证码"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/back"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/luobo"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/yhm"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="手机号"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/phone_number" />
+    <EditText
+        android:maxLength="11"
+        android:digits="1234567890"
+       android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/phone_number"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/Verification_code_bt"
+        android:layout_toEndOf="@+id/yhm" />
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/mm"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="验证码"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/Verification_code"
+        android:layout_below="@+id/yhm"
+        android:layout_alignParentStart="true" />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/Verification_code"
+        android:layout_below="@+id/yhm"
+        android:layout_alignEnd="@+id/Verification_code_bt"
+        android:layout_toEndOf="@+id/yhm"
+        android:layout_alignStart="@+id/phone_number" />
+    <Button
+
+        android:text="发送验证码"
+        android:textColor="#cdcccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shap1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/Verification_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:id="@+id/Verification_code_bt" />
+</RelativeLayout>

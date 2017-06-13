@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#40bbb3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_weight="2"
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/erweima" />
+
+        <RelativeLayout
+            android:layout_marginLeft="30dp"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:background="@drawable/semi_round_backgroud"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xin"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="19dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_weight="2"
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/bianji" />
+    </LinearLayout>
+  <FrameLayout
+      android:id="@+id/fl"
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"></FrameLayout>
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#40bbb3"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector1"
+            android:gravity="center"
+            android:text="视频"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/rb_book"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector2"
+            android:gravity="center"
+            android:text="书城"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector3"
+            android:gravity="center"
+            android:text="主页"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/rb_jiejie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector4"
+            android:gravity="center"
+            android:text="结界"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/rb_maimai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector5"
+            android:gravity="center"
+            android:text="买买"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector6"
+            android:gravity="center"
+            android:text="我的"
+            android:textSize="15dp" />
+    </RadioGroup>
+
+</LinearLayout>
